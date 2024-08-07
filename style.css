@@ -8,8 +8,25 @@
 }
 body{
     font-size: 1.6rem;
+    background-color: #6B9795;
+    color: white;
 }
 header{
+    display: flex;
+    justify-content: center;
     font-family: 'Koulen', sans-serif;
-    font-size: 7rem;
+    font-size: 3rem;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+}
+.choiceBox{
+    height: 30rem;
+    width: 30rem;
+    background-color: white;
+    font-family: 'Koulen', sans-serif;
+    color: black;
+    border: 2px solid black;
 }
