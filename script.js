@@ -31,12 +31,20 @@ function playGame() {
     }
   }
 
-  for (let i = 0; i < 5; i++) {
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
-    console.log("Computer's choice: " + computerSelection)
-    playRound(humanSelection, computerSelection)
-  }
+  const rockButton = document.getElementById("rock")
+  rockButton.addEventListener("click", function(){
+    playRound("rock", getComputerChoice())
+  })
+
+  const paperButton = document.getElementById("paper")
+  paperButton.addEventListener("click", function(){
+    playRound("paper", getComputerChoice())
+  })
+
+  const scissorsButton = document.getElementById("scissor")
+  scissorsButton.addEventListener("click", function(){
+    playRound("scissor", getComputerChoice())
+  })
 
   console.log(`Final Score - You: ${humanScore} Computer: ${computerScore}`);
 
